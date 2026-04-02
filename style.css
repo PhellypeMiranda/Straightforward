@@ -1,0 +1,359 @@
+html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    header {
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      align-items: center;
+      padding: 10px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    header img {
+      max-width: 150px;
+      height: auto;
+    }
+    nav {
+      display: flex;
+      gap: 40px;
+    }
+    nav a {
+      color: #1677ff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .menu-toggle {
+      display: none; /* Escondido em desktops */
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #1677ff;
+      padding: 5px;
+    }
+    section {
+      margin: 80px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+      text-align: center;
+      padding-top: 80px; /* Altura do header + margem extra */
+      margin-top: -80px; /* Compensa o padding para manter o layout */
+      padding-bottom: 40px; /* Altura do header + margem extra */
+    }
+    section h2 {
+      color: #1677ff;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+    ul {
+      display: inline-block;
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      text-align: left;
+    }
+    ul li i {
+      margin-right: 8px;
+      color: #1677ff;
+    }
+    .hero {
+      background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(244,248,255,0.7) 100%), url('images/hero-bg.jpg') no-repeat center/cover;
+      padding: 120px 20px;
+      background-color: #f4f8ff; /* Azul bem claro para seções pares */
+      background-position: 70% 10%; /* Ajusta para focar na parte superior (20% do topo) */
+      padding: 150px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #1677ff;
+    }
+    .hero p {
+      font-size: 1.8rem;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .btn {
+      display: inline-block;
+      max-width: 200px;
+      background-color: #e63946;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: transform 0.2s;
+    }
+    .btn:hover {
+      background-color: #125fd4;
+      transform: scale(1.05);
+    }
+    #sobre {
+      gap: 10px;
+      max-width: 700px;
+      margin: 20px auto;
+      background-color: #f4f8ff;
+    }
+    #metodologia{
+      gap: 10px;
+      max-width: 700px;
+      margin: 20px auto;
+      background-color: #fff0f0;
+    }
+     #diferencial{
+      gap: 10px;
+      max-width: 700px;
+      margin: 20px auto;
+      background-color: #f4f8ff;
+    }
+    #planos{
+      gap: 10px;
+      max-width: 700px;
+      margin: 20px auto;
+      background-color: #fff0f0;
+    }
+   .planos-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .plano {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 250px;
+      text-align: center;
+    }
+    .plano i {
+      font-size: 2rem;
+      color: #1677ff;
+      margin-bottom: 10px;
+    }
+    .plano h3 {
+      color: #1677ff;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .plano p {
+      font-size: 0.9rem;
+    }
+    .promo-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .promo-text {
+      font-size: 1.2rem;
+      color: #222;
+    }
+    .promo-text strong {
+      color: #e63946;
+    }
+    .countdown {
+      font-size: 1.5rem;
+      color: #1677ff;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    @media (max-width: 940px) {
+      .plano {
+        max-width: 100%;
+      }
+      .countdown {
+        font-size: 1.2rem;
+      }
+    }
+    #depoimentos{
+      gap: 10px;
+      max-width: 700px;
+      margin: 20px auto;
+      background-color: #f4f8ff;
+    }
+    .testimonial .stars i {
+      font-size: 1rem;
+      color: #ffd700; /* Gold for stars */
+    }
+    .testimonial-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .testimonial {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 300px;
+      text-align: left;
+    }
+    .testimonial-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    #FAQ{
+      gap: 10px;
+      max-width: 700px;
+      margin: 20px auto;
+      background-color: #fff0f0;
+    }
+    .faq-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    .faq {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .faq h3 {
+      color: #000000;
+      font-size: 1.1rem;
+      padding: 15px;
+      margin: 0;
+      cursor: pointer;
+    }
+    .faq .answer {
+      display: none; /* Hidden by default */
+      font-size: 0.9rem;
+      padding: 0 15px 15px;
+      color: #222;
+    }
+    .faq .answer.active {
+      display: block; /* Shown when clicked */
+    }
+    @media (max-width: 940px) {
+      .faq h3 {
+        padding: 10px;
+      }
+      .faq .answer {
+        padding: 0 10px 10px;
+      }
+    }
+    .contact {
+      background-color: #1677ff;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .contact a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: 0 auto 20px;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .contact textarea {
+      resize: vertical;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      padding: 10px;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      font-size: 12px;
+      text-decoration: none;
+    }
+    .whatsapp-btn img {
+      width: 30px;
+      height: 30px;
+    }
+    .whatsapp-btn:hover {
+    background-color: #20b354; /* Verde mais escuro no hover */
+    }
+    @media (max-width: 940px) {
+      .whatsapp-btn {
+        display: none; /* Oculta o botão em telas menores */
+      }
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+    @media (max-width: 940px) {
+      nav {
+        display: none;
+      }
+      nav.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      section {
+        margin: 40px auto;
+        padding: 0 15px;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+      .plan, .testimonial {
+        max-width: 100%;
+      }
+    }
